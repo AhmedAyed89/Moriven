@@ -1,0 +1,15 @@
+<%= form_for @team do |f|%>
+    <%=f.label :name%><br>
+    <%=f.text_field :name%><br>
+    <%=f.label :position%><br>
+    <%=f.text_field :position%><br>
+    <%=f.label :description%><br>
+    <%=f.text_field :description%><br>
+    <%=f.label :facebook%><br>
+    <%=f.text_field :facebook%><br>
+    <%=f.label :twitter%><br>
+    <%=f.text_field :twitter%><br>
+    <%=f.label :github%><br>
+    <%=f.text_field :github%><br>
+    <%=f.submit 'Submit a team Member'%>
+<%end%>
