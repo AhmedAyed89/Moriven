@@ -6,9 +6,15 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="withAnimation">
+<%= render 'shared/mobile_nav'%>
+<div id="boxedWrapper" class="snap-content">
+  <%= render 'shared/nav'%>
 
 <%= yield %>
 
+  <%= render 'shared/footer1'%>
+</div>
+<a href="#" id="toTop"><i class="fa fa-angle-up"></i></a>
 </body>
 </html>

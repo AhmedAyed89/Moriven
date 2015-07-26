@@ -1,12 +1,13 @@
-@import "icons/fontello/css/fontello.css";
-@import "icons/pixeden-icon/css/pe-icon-7-stroke.css";
-@import "icons/pixeden-icon/css/helper.css";
+@import "fontello.css";
+@import "pe-icon-7-stroke.css";
+@import "helper.css";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300&amp;subset=latin,latin-ext);
 @import "../js/magnificpopup/magnific-popup.css";
 /* Table of content */
 /*
 
 1. FONTS
+2. TYPOGRAPHY
 2. TYPOGRAPHY
 3. COLORS
 4. BUTTONS
@@ -103,19 +104,19 @@ body.boxed #boxedWrapper,
   background-attachment: fixed !important;
 }
 .ptn1 {
-  background: url("../images/mochaGrunge.png") repeat;
+  background: url("mochaGrunge.png") repeat;
 }
 .ptn2 {
-  background: url("../images/bg_pattern_03.jpg") repeat;
+  background: url("bg_pattern_03.jpg") repeat;
 }
 .ptn3 {
-  background: url("../images/bg_pattern_05.jpg") repeat;
+  background: url("bg_pattern_05.jpg") repeat;
 }
 .ptn4 {
-  background: url("../images/bg_pattern_08.jpg") repeat;
+  background: url("bg_pattern_08.jpg") repeat;
 }
 .ptn5 {
-  background: url("../images/bg_pattern_11.jpg") repeat;
+  background: url("bg_pattern_11.jpg") repeat;
 }
 /*------------------
 (2) TYPOGRAPHY
@@ -1708,10 +1709,10 @@ body.preloader #ct_preloader {
   z-index: 9999;
 }
 body.preloader #ct_preloader {
-  background: #ffffff url("../assets/images/loader1.html") no-repeat 50% 45%;
+  background: #ffffff url("loader1.html") no-repeat 50% 45%;
 }
 #ct_preloader.ajax-inprogress {
-  background: transparent url("../assets/images/loading.html") no-repeat 50% 50%;
+  background: transparent url("loading.html") no-repeat 50% 50%;
   z-index: 9999;
   width: 40px;
   height: 40px;

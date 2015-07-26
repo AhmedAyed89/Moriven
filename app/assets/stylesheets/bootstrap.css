@@ -5961,8 +5961,11 @@ td.visible-print {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('icons/awesome/fontawesome-webfont78ce.eot?v=4.2.0');
-  src: url('icons/awesome/fontawesome-webfontd41d.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('icons/awesome/fontawesome-webfont78ce.woff?v=4.2.0') format('woff'), url('icons/awesome/fontawesome-webfont78ce.html?v=4.2.0') format('truetype'), url('icons/awesome/fontawesome-webfont78ce.svg?v=4.2.0#fontawesomeregular') format('svg');
+  src: url('fontawesome-webfont78ce.eot?v=4.2.0');
+  src: url('fontawesome-webfontd41d.eot?#iefix&v=4.2.0') format('embedded-opentype'),
+  url('fontawesome-webfont78ce.woff?v=4.2.0') format('woff'),
+  url('fontawesome-webfont78ce.html?v=4.2.0') format('truetype'),
+  url('fontawesome-webfont78ce.svg?v=4.2.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
