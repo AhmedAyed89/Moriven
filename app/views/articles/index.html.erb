@@ -299,48 +299,4 @@
     </div>
   </div>
 </div>
-
-<!-- / Parallax -->
-
-
-<!-- section PREFOOTER -->
-<div id="prefooter" class="content-area">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 animated" >
-
-        <div class="newsletterForm content_center">
-
-          <h2 class="widget-title">Subscribe to Our Newsletter!</h2>
-
-          <div class="successMessage alert alert-success alert-dismissable" style="display: none">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            Thank You! E-mail was sent.
-          </div>
-          <div class="errorMessage alert alert-danger alert-dismissable" style="display: none">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            Ups! An error occured. Please try again later.
-          </div>
-
-          <form class="liveForm form-inline validateIt" role="form" action="http://master.html.themeforest.createit.pl/assets/form/send.php" method="post"
-                data-email-subject="Newsletter Form" data-show-errors="true" data-hide-form="true">
-
-            <input type="submit" class="btn btn-lg btn-click" value="Subscribe!">
-
-            <div class="form-group">
-              <i class="icon-paper-plane"></i>
-              <input type="text" name="field[]" required class="form-control" placeholder="Your email address..">
-            </div>
-          </form>
-
-          <p class="summary">Subscribe to our weekly newsletter to receive the latest freebies in your
-            inbox!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- / section -->
-
-
-<!-- footer -->
+<%= render 'shared/newsletter_footer'%>

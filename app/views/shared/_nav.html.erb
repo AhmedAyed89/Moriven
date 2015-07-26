@@ -14,53 +14,20 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="active dropdown">
-          <a href="index-2.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="index-2.html">Multipurpose<span>lorem ipsum</span></a></li>
-            <li><a href="02-homepage-onepage.html">Onepager parallax<span>lorem ipsum</span></a></li>
-            <li><a href="02-homepage-onepage-kenburns.html">Onepager kenburns<span>lorem ipsum</span></a></li>
-            <li><a href="02-homepage-onepage-video.html">Onepager video<span>lorem ipsum</span></a></li>
-            <li><a href="01-homepage-ecommerce.html">E-commerce<span>lorem ipsum</span></a></li>
-          </ul>
+          <%=link_to 'Home', root_path%>
         </li>
         <li class="dropdown">
-          <a href="about-us.html" class="dropdown-toggle" data-toggle="dropdown">Page</a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="about-us.html">About us<span>lorem ipsum</span></a></li>
-            <li><a href="13-404-page.html">404 Page<span>lorem ipsum</span></a></li>
-            <li><a href="12-contact-us.html">Contact<span>lorem ipsum</span></a></li>
-          </ul>
+          <%=link_to 'About Us', about_path%>
         </li>
         <li class="dropdown">
-          <a href="05-blog.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="05-blog.html">Simple List <span>lorem ipsum</span></a></li>
-            <li><a href="05-blog-masonry.html">Masonry<span>lorem ipsum</span></a></li>
-            <li><a href="06-post.html">Single Post <span>lorem ipsum</span></a></li>
-          </ul>
+          <%=link_to 'Blog', articles_path%>
         </li>
         <li class="dropdown" >
-          <a href="03-portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="03-portfolio.html">Isotope <span>lorem ipsum</span></a></li>
-            <li><a href="04-project-page.html">Project Page <span>lorem ipsum</span></a></li>
-          </ul>
+          <%=link_to 'Work', portfolios_path%>
         </li>
-        <li class="dropdown" >
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="feature-animations.html">Animations<span>lorem ipsum</span></a></li>
-            <li><a href="feature-buttons.html">Buttons<span>lorem ipsum</span></a></li>
-            <li><a href="feature-forms.html">Forms<span>lorem ipsum</span></a></li>
-            <li><a href="feature-grid.html">Grid<span>lorem ipsum</span></a></li>
-            <li><a href="feature-headers.html">Headers<span>lorem ipsum</span></a></li>
-            <li><a href="feature-progressbars.html">Progressbars<span>lorem ipsum</span></a></li>
-            <li><a href="feature-tables.html">Tables<span>lorem ipsum</span></a></li>
-            <li><a href="feature-toggable.html">Toggable<span>lorem ipsum</span></a></li>
-            <li><a href="feature-typography.html">Typography<span>lorem ipsum</span></a></li>
-          </ul>
+        <li>
+          <%= link_to 'Contact us now', contact_path ,class:'btn btn-border active hidden-sm'%>
         </li>
-        <li><a class="btn btn-border active hidden-sm" href="12-contact-us.html">Contact us now</a></li>
       </ul>
     </div>
   </div>
