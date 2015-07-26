@@ -1,3 +1,307 @@
 <%=@portfolio.title%><br>
 <%= @portfolio.description%><br>
 <%=@portfolio.project_url%>
+
+<!-- header -->
+<header class="height">
+
+
+  <div data-image-mobile="assets/images/demo-content/03-portfolio-banner.jpg" data-image="assets/images/demo-content/03-portfolio-banner.jpg" data-type="parallax" data-height="500" data-stellar-background-ratio="0" class="media-section">
+
+    <div class="display-table">
+      <div class="inner">
+
+        <div class="flexslider std-slider center-controls" data-height="" data-loop="true" data-smooth="false" data-slideshow="true" data-speed="15000" data-animspeed="550" data-controls="false" data-dircontrols="true">
+          <ul class="slides">
+            <li>
+              <div class="container">
+                <div class="text-left width inner">
+                  <h2 class="page-title animated" data-fx="fadeInDown">WELCOME TO OUR PORTFOLIO</h2>
+
+                  <h3 class="animated" data-fx="bounceIn">
+                    Featuring the best design on the web Best of Blog Corporate CSS Design<br/>
+                    becoming like this is one of your goals, here are some general pointers.
+                  </h3>
+                  <a href="#content" class="btn btn-default btn-lg animated local" data-fx="fadeInUp">Get Started
+                    Now</a>
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="container">
+                <div class="text-left width inner">
+                  <h2 class="page-title animated" data-fx="fadeInDown">WELCOME TO OUR PORTFOLIO</h2>
+
+                  <h3 class="animated" data-fx="bounceIn">
+                    Featuring the best design on the web Best of Blog Corporate CSS Design<br/>
+                    becoming like this is one of your goals, here are some general pointers.
+                  </h3>
+                  <a href="#content" class="btn btn-default btn-lg animated local" data-fx="fadeInUp">Get Started Now</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- / header -->
+
+
+
+<!--  section CONTENT -->
+<div id="content" class="content-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <%= image_tag 'demo-content/04-project-example-image.jpg'%>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <h2 class="content-tile"><%=@portfolio.title%></h2>
+        <p class="weight300"><%=@portfolio.description%>
+        </p>
+        <br/>
+        <p class="weight300">*Live Demo & Download links</p>
+        <br/>
+            <%= link_to 'View Porject', @portfolio.project_url,class:'btn btn-grey btn-lg'%>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / section -->
+
+
+
+
+<!--  section PORTFOLIO -->
+<div id="s_03" class="content-area">
+
+  <div class="container">
+
+    <div class="row section-header">
+      <div class="col-sm-12 col-md-9 table-cell">
+
+        <h2>Related Projects</h2>
+        <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br /> sed do eiusmod tempor incididunt ut labore.</p>
+
+      </div>
+      <div class="col-sm-12 col-md-3 text-right table-cell">
+        <a class="btn btn-default uppercase">view all projects</a>
+      </div>
+    </div>
+
+
+    <div id="galleryContainer" class="clearfix withSpaces col-3">
+
+
+      <div class="galleryItem identity">
+
+        <article class="portfolio-item">
+          <div class="portfolio-thumbnail">
+            <a href="#"><img draggable="false" src="assets/images/demo-content/02-home-portfolio-01.jpg" alt="" title=""></a>
+            <a href="assets/images/demo-content/02-home-portfolio-01.jpg" data-type="image" title="Image Title Goes Here" class="magnificpopup overlay-img"><span class="overlay-ico"><i class="pe-7s-search"></i></span></a>
+          </div>
+          <h4 class="entry-title"><a href="#">Creative Pager</a></h4>
+          <div class="entry-meta">
+            <span class="cat-links"><a href="#">Apps</a>, <a href="#">Icons</a>, <a href="#">WordPress</a></span>
+          </div>
+
+        </article>
+
+
+      </div>
+
+
+      <div class="galleryItem identity">
+
+
+        <article class="portfolio-item">
+          <div class="portfolio-thumbnail">
+            <a href="#"><img draggable="false" src="assets/images/demo-content/02-home-portfolio-02.jpg" alt="" title=""></a>
+            <a href="assets/images/demo-content/02-home-portfolio-02.jpg" data-type="image" title="Image Title Goes Here" class="magnificpopup overlay-img"><span class="overlay-ico"><i class="pe-7s-search"></i></span></a>
+          </div>
+          <h4 class="entry-title"><a href="#">New World</a></h4>
+          <div class="entry-meta">
+            <span class="cat-links"><a href="#">Apps</a>, <a href="#">Icons</a>, <a href="#">WordPress</a></span>
+          </div>
+
+        </article>
+
+
+      </div>
+
+
+      <div class="galleryItem web">
+        <article class="portfolio-item">
+
+          <div class="portfolio-thumbnail">
+            <a href="#"><img draggable="false" src="assets/images/demo-content/02-home-portfolio-03.jpg" alt="" title=""></a>
+            <a href="assets/images/demo-content/02-home-portfolio-03.jpg" data-type="image" title="Image Title Goes Here" class="magnificpopup overlay-img"><span class="overlay-ico"><i class="pe-7s-search"></i></span></a>
+          </div>
+          <h4 class="entry-title"><a href="#">Social Boxes</a></h4>
+          <div class="entry-meta">
+            <span class="cat-links"><a href="#">Apps</a>, <a href="#">Icons</a>, <a href="#">WordPress</a></span>
+          </div>
+
+        </article>
+
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+<!-- / section -->
+
+
+
+
+<!--  Parallax Awesome Clients-->
+
+<div data-image-mobile="assets/images/bg-red-parallax.jpg" data-image="assets/images/bg-red-parallax.jpg" data-type="parallax" data-height="" data-stellar-background-ratio="0.5" class="media-section parallaxSection prlx_height">
+
+  <!--  section Awesome Clients -->
+
+  <div class="black ">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12 col-md-3 table-cell">
+
+          <div class="awesome section-header">
+            <h2>Our Awesome Clients</h2>
+            <p class="summary">More than 5,000 customers trust us from around the world, and felt happy with our five stars services!</p>
+            <br />
+            <button class="btn btn-border white btn-lg">Get Started Now</button>
+          </div>
+
+
+        </div>
+        <div class="col-sm-12 col-md-9 table-cell">
+
+          <div class="centre">
+            <ul class="row thumbnails list-unstyled text-center">
+              <li class="col-xs-12 col-sm-6 col-md-3 animated" data-fx="bounceIn">
+                <a href="#">
+                  <img alt="" title="" src="assets/images/demo-content/logos/home-v1-clients-logo1.png">
+                </a>
+              </li>
+              <li class="col-xs-12 col-sm-6 col-md-3 animated" data-fx="bounceIn">
+                <a href="#">
+                  <img alt="" title="" src="assets/images/demo-content/logos/home-v1-clients-logo2.png">
+                </a>
+              </li>
+              <li class="col-xs-12 col-sm-6 col-md-3 animated" data-fx="bounceIn">
+                <a href="#">
+                  <img alt="" title="" src="assets/images/demo-content/logos/home-v1-clients-logo3.png">
+                </a>
+              </li>
+              <li class="col-xs-12 col-sm-6 col-md-3 animated" data-fx="bounceIn">
+                <a href="#">
+                  <img alt="" title="" src="assets/images/demo-content/logos/home-v1-clients-logo4.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="centre">
+            <ul class="row thumbnails list-unstyled text-center">
+              <li class="col-xs-12 col-sm-6 col-md-3 animated" data-fx="bounceIn">
+                <a href="#">
+                  <img alt="" title="" src="assets/images/demo-content/logos/home-v1-clients-logo5.png">
+                </a>
+              </li>
+              <li class="col-xs-12 col-sm-6 col-md-3 animated" data-fx="bounceIn">
+                <a href="#">
+                  <img alt="" title="" src="assets/images/demo-content/logos/home-v1-clients-logo6.png">
+                </a>
+              </li>
+              <li class="col-xs-12 col-sm-6 col-md-3 animated" data-fx="bounceIn">
+                <a href="#">
+                  <img alt="" title="" src="assets/images/demo-content/logos/home-v1-clients-logo7.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- / section -->
+
+
+</div>
+<!-- / Parallax -->
+
+
+
+
+<!-- section PREFOOTER -->
+<div id="prefooter" class="content-area">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-4 animated" data-fx="fadeInDown">
+        <div class="about-info">
+          <h2 class="widget-title">About Master</h2>
+          <p class="summary">
+            Lorem Ipsum is simply dumy text of the printing and typing setting and industry Lorem Ipum has been the industry's standard dummy text un ever member since the 1500s.
+          </p>
+
+        </div>
+
+
+      </div>
+      <div class="col-sm-12 col-md-4 animated" data-fx="fadeInUp">
+
+        <div class="twitter-stream">
+          <h2 class="widget-title">Twitter Stream</h2>
+          <div data-limit="1" class="tweets_display">
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-sm-12 col-md-4 animated" data-fx="fadeInDown">
+
+        <div class="newsletterForm">
+
+          <h2 class="widget-title">Subscribe to Our Newsletter!</h2>
+
+          <div class="successMessage alert alert-success alert-dismissable" style="display: none">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            Thank You! E-mail was sent.
+          </div>
+          <div class="errorMessage alert alert-danger alert-dismissable" style="display: none">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            Ups! An error occured. Please try again later.
+          </div>
+
+          <p class="summary">Subscribe to our weekly newsletter to receive the latest freebies in your
+            inbox!</p>
+
+          <form class="liveForm form-inline validateIt" role="form" action="http://master.html.themeforest.createit.pl/assets/form/send.php" method="post"
+                data-email-subject="Newsletter Form" data-show-errors="true" data-hide-form="true">
+
+            <input type="submit" class="btn btn-click" value="Subscribe!">
+
+            <div class="form-group">
+              <i class="icon-paper-plane"></i>
+              <input type="text" name="field[]" required class="form-control" placeholder="Your email address..">
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / section -->
