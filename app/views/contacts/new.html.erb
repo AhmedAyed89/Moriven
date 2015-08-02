@@ -1,21 +1,5 @@
-<%= form_for @contact, url: contact_path   do  |f|%>
-    <%= f.text_field :name, placeholder:'Name *'%>
-    <br>
-      <%= f.text_field :email, :required => true, placeholder:'Email Address *'%>
-    <br>
-    <%= f.text_field :phone, placeholder:'Phone Number'%>
-    <br>
-      <%= f.text_field :subject,:required => true, placeholder:'Subject *'%>
-    <br>
-      <%= f.text_area :message, :required => true, placeholder:'Message *'%>
-    <br>
-      <%= f.submit 'Submit'%>
-<%end%>
-
 <!-- header -->
 <header class="height">
-
-
   <div data-image-mobile="assets/images/demo-content/12-contact-banner.jpg" data-image="assets/images/demo-content/12-contact-banner.jpg" data-type="parallax" data-height="400" data-stellar-background-ratio="0" class="media-section">
 
     <div class="display-table">
@@ -89,34 +73,29 @@
           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
           Ups! An error occured. Please try again later.
         </div>
-
-        <form class="contact-form validateIt" role="form" action="http://master.html.themeforest.createit.pl/assets/form/send.php" method="post"
-              data-email-subject="Contact Form" data-show-errors="true" data-hide-form="true">
+        <%= form_for @contact, class:'contact-form validateIt', url: contact_path   do  |f|%>
 
           <div class="form-group">
             <label class="control-label">Name <span>*</span></label>
-            <input required="" name="field[]" class="form-control" type="text" placeholder="Your Name">
+            <%= f.text_field :name, placeholder:'Name *',class:'form-control'%>
           </div>
 
           <div class="form-group">
             <label class="control-label">Email <span>*</span></label>
-            <input type="email" class="form-control" name="field[]" required="" placeholder="Your Email">
+            <%= f.text_field :email, :required => true, placeholder:'Email Address *',class:'form-control'%>
           </div>
 
           <div class="form-group">
             <label class="control-label">Phone <span>*</span></label>
-            <input type="text" class="form-control" name="field[]" placeholder="Your Phone">
+            <%= f.text_field :phone, placeholder:'Phone Number',class:'form-control'%>
           </div>
 
           <div class="form-group">
             <label class="control-label">Your Message  <span>*</span></label>
-            <textarea rows="5" class="form-control" required="" name="field[]" placeholder="Your Message"></textarea>
+            <%= f.text_area :message, :required => true, placeholder:'Message *',class:'form-control'%>
           </div>
-
-          <input type="submit" value="Send Mail" class="btn btn-lg btn-border">
-
-
-        </form>
+            <%= f.submit 'Send Mail',class:'btn btn-lg btn-border'%>
+        <%end%>
       </div>
 
     </div>

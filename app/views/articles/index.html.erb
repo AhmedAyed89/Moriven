@@ -1,11 +1,6 @@
-<%@articles.each do |article|%>
-    <%=article.title%><br>
-    <%=article.description%>
-<%end%>
-
 <!-- header -->
 <header class="height">
-  <div data-image-mobile="assets/images/bg-plannet-parallax.jpg" data-image="assets/images/bg-plannet-parallax.jpg" data-type="parallax" data-height="670" data-stellar-background-ratio="0" class="media-section">
+  <div data-image-mobile="<%= image_url 'bg-plannet-parallax.jpg'%>" data-image="<%= image_url 'bg-plannet-parallax.jpg'%>" data-type="parallax" data-height="670" data-stellar-background-ratio="0" class="media-section">
 
     <div class="display-table">
       <div class="inner">
@@ -40,243 +35,32 @@
   </div>
 </header>
 <!-- / header -->
-
 <!--  section CONTENT -->
-
 <div id="content" class="content-area">
   <div class="container">
     <div class="row">
-
-      <div class="col-md-9">
-
-        <div class="clearfix withMasonry isotope col-2" id="blog-list">
+      <div class="col-md-12">
+        <div class="clearfix withMasonry isotope col-12" id="blog-list">
+          <%@articles.each do |article|%>
           <article class="blog-item item-smaller isotope-item">
             <div class="blog-thumbnail">
-              <a href="06-post.html"><img alt=" " src="assets/images/demo-content/05-blog-single-post-image1.jpg"></a>
+              <a href="06-post.html"><%= image_tag 'demo-content/05-blog-single-post-image1.jpg'%></a>
               <a href="06-post.html" class="overlay-img"><span class="overlay-ico"><i class="pe-7s-search"></i></span></a>
             </div>
             <div class="innerMargin">
-
-              <h4 class="entry-title"><a href="#">This is a standard post format with preview picture</a></h4>
-
-              <p>
-                Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
+              <h4 class="entry-title"><a href="#"><%=article.title%></a></h4>
+              <p><%=article.description%></p>
               <a class="readMore btn btn-border" href="06-post.html">Continue reading</a>
             </div>
           </article>
-          <!-- / blog-item -->
-          <article class="blog-item format-gallery isotope-item">
-            <div class="blog-thumbnail">
-              <div data-dircontrols="true" data-animspeed="600" data-loop="true" data-animation="fade" class="flexslider std-slider center-controls" style="">
-                <ul class="slides">
-                  <li class="flex-active-slide">
-                    <a href="#"><img alt=" " src="assets/images/demo-content/05-blog-single-post-image2.jpg" draggable="false"></a></li>
-                  <li ><a href="#"><img alt=" " src="assets/images/demo-content/05-blog-single-post-image3.jpg" draggable="false"></a></li>
-                </ul>
-                <ul class="flex-direction-nav"><li><a href="#" class="flex-prev"> </a></li><li><a href="#" class="flex-next"> </a></li></ul></div>
-            </div>
-            <div class="innerMargin">
-
-              <h4 class="entry-title"><a href="#">Gallery post format: post with multiple images</a></h4>
-
-              <p>
-                Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
-              </p>
-              <a class="readMore btn btn-border" href="06-post.html">Continue reading</a>
-            </div>
-          </article>
-          <!-- / blog-item -->
-          <article class="blog-item format-video isotope-item">
-            <div class="blog-thumbnail">
-              <div class="responsiveVideo">
-                <iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/HJ2F7eptn_A?rel=0" id="fitvid163437"></iframe>
-              </div>
-            </div>
-            <div class="innerMargin">
-
-              <h4 class="entry-title"><a href="06-post.html">This is a video post</a></h4>
-
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-              </p>
-              <a class="readMore btn btn-border" href="06-post.html">Continue reading</a>
-            </div>
-          </article>
-          <!-- / blog-item -->
-          <article class="blog-item format-link isotope-item">
-            <div class="innerMargin">
-
-              <h4 class="entry-title"><a href="#">Link post format →</a></h4>
-            </div>
-          </article>
-          <!-- / blog-item -->
-          <article class="blog-item format-quote isotope-item">
-            <div class="innerMargin">
-
-              <div class="entry-title">
-                <blockquote>
-                  <a href="#">Creativity is in everyone; it just manifests itself differently with each person. My CPA, for example, is one of the most creative people I know.
-                    <span class="author">&mdash; Ron Miriello</span></a>
-                </blockquote>
-              </div>
-            </div>
-          </article>
-          <!-- / blog-item -->
-          <article class="blog-item format-audio isotope-item">
-            <div class="blog-thumbnail">
-              <div class="responsiveVideo">
-                <iframe width="100%" height="200" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/117927267&amp;auto_play=false&amp;hide_related=false&amp;visual=true" scrolling="no"></iframe>
-              </div>
-            </div>
-            <div class="innerMargin">
-
-              <h4 class="entry-title"><a href="06-post.html">This is audio post</a></h4>
-
-              <p>
-                Praesent augue arcu, ornare ut tincidunt eu, mattis a libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In elit purus, ullamcorper vel luctus vitae, venenatis eu odio. Vivamus tincidunt, urna quis consectetur venenatis, quam urna tincidunt mi. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur voluptatem sequi nesciunt.
-              </p>
-              <a class="readMore btn btn-border" href="06-post.html">Continue reading</a>
-            </div>
-          </article>
+          <%end%>
           <!-- / blog-item -->
         </div>
         <!-- / blog-list -->
-
-
-      </div>
-      <div class="col-md-3">
-
-
-        <div id="blog-sidebar">
-
-
-          <aside class="widget">
-            <h1 class="widget-title">Search</h1>
-            <form class="search-form" role="search">
-              <input type="search" placeholder="" class="form-control">
-              <input type="submit" value="search">
-            </form>
-          </aside>
-
-          <aside class="widget categories-widget">
-            <h1 class="widget-title">Categories</h1>
-
-            <ul class="list-unstyled">
-              <li><a href="#">Photography</a></li>
-              <li><a href="#">Motion Graphic</a></li>
-              <li><a href="#">WordPress</a></li>
-              <li><a href="#">Video Gallery</a></li>
-              <li><a href="#">Technology</a></li>
-            </ul>
-          </aside>
-
-          <aside class="widget wp_widget_tag_cloud">
-            <h1 class="widget-title">Tags</h1>
-
-            <a class="btn btn-default btn-sm" href="#">Photography</a>
-            <a class="btn btn-default btn-sm" href="#">Motion Graphic</a>
-            <a class="btn btn-default btn-sm" href="#">Java Script</a>
-            <a class="btn btn-default btn-sm" href="#">Video Gallery</a>
-            <a class="btn btn-default btn-sm" href="#">Blog</a>
-            <a class="btn btn-default btn-sm" href="#">WordPress</a>
-            <a class="btn btn-default btn-sm" href="#">Business</a>
-
-          </aside>
-
-
-          <aside class="widget">
-            <h1 class="widget-title">Latest Posts</h1>
-
-            <article class="blog-item media">
-
-              <a class="pull-left" href="#">
-                <img class="media-object" src="assets/images/demo-content/05-blog-lastpost-widget-01.jpg" alt="">
-              </a>
-
-              <div class="media-body">
-                <h4 class="entry-title"><a href="#">Maecenas metus lorem nulla facili prem lipsum.</a></h4>
-                <div class="entry-meta">
-                  <span class="entry-date">12 August 2014</span>
-                </div>
-              </div>
-            </article>
-            <article class="blog-item media">
-
-              <a class="pull-left" href="#">
-                <img class="media-object" src="assets/images/demo-content/05-blog-lastpost-widget-02.jpg" alt="">
-              </a>
-
-              <div class="media-body">
-                <h4 class="entry-title"><a href="#">Tetus lorem maecenas  nulla, facili lipsu pretium.</a></h4>
-                <div class="entry-meta">
-                  <span class="entry-date">28 July 2014</span>
-                </div>
-              </div>
-            </article>
-            <article class="blog-item media">
-
-              <a class="pull-left" href="#">
-                <img class="media-object" src="assets/images/demo-content/05-blog-lastpost-widget-03.jpg" alt="">
-              </a>
-
-              <div class="media-body">
-                <h4 class="entry-title"><a href="#">Lorem maecenas metus nulla pretm lipsum facili.</a></h4>
-                <div class="entry-meta">
-                  <span class="entry-date">16 June 2014</span>
-                </div>
-              </div>
-            </article>
-
-          </aside>
-
-          <aside class="widget">
-            <h1 class="widget-title">Twitter Stream</h1>
-
-            <div data-limit="1" class="tweets_display">
-
-            </div>
-
-
-
-          </aside>
-
-          <aside class="widget">
-            <h1 class="widget-title">Flickr Stream</h1>
-
-            <div class="flickr_badge">
-              <div class="flickr_badge_image">
-                <a href="#"><img alt="" src="assets/images/demo-content/05-blog-flickr-img-01.jpg"></a>
-              </div>
-              <div class="flickr_badge_image">
-                <a href="#"><img alt="" src="assets/images/demo-content/05-blog-flickr-img-04.jpg"></a>
-              </div>
-              <div class="flickr_badge_image">
-                <a href="#"><img alt="" src="assets/images/demo-content/05-blog-flickr-img-03.jpg"></a>
-              </div>
-              <div class="flickr_badge_image">
-                <a href="#"><img alt="" src="assets/images/demo-content/05-blog-flickr-img-04.jpg"></a>
-              </div>
-              <div class="flickr_badge_image">
-                <a href="#"><img alt="" src="assets/images/demo-content/05-blog-flickr-img-05.jpg"></a>
-              </div>
-              <div class="flickr_badge_image">
-                <a href="#"><img alt="" src="assets/images/demo-content/05-blog-flickr-img-06.jpg"></a>
-              </div>
-            </div>
-
-          </aside>
-
-        </div>
-        <!-- / sidebar -->
       </div>
     </div>
   </div>
-
 </div>
-
-
 <!-- / content -->
 
 

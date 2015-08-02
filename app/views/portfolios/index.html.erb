@@ -1,10 +1,3 @@
-
-<%@portfolios.each do |p|%>
-    <%=p.title%><br>
-    <%=p.description%><br>
-    <%=p.project_url%>
-<%end%>
-
 <!--  section PORTFOLIO -->
 <div id="portfolio" class="content-area">
   <div class="container">
@@ -31,20 +24,22 @@
 
 
     <div id="galleryContainer" class="clearfix withSpaces col-3">
-      <div class="galleryItem identity">
-        <article class="portfolio-item">
+      <%@portfolios.each do |p|%>
+    <div class="galleryItem identity">
+      <article class="portfolio-item">
           <div class="portfolio-thumbnail">
             <a href="#">
               <%= image_tag 'demo-content/02-home-portfolio-01.jpg', draggable:'false'%>
               </a>
             <a href="assets/images/demo-content/02-home-portfolio-01.jpg" data-type="image" title="Image Title Goes Here" class="magnificpopup overlay-img"><span class="overlay-ico"><i class="pe-7s-search"></i></span></a>
           </div>
-          <h4 class="entry-title"><a href="04-project-page.html">Project name goes here</a></h4>
+          <h4 class="entry-title"><a href="04-project-page.html"><%=p.title%></a></h4>
           <div class="entry-meta">
             <span class="cat-links"><a href="#">Identity</a>, <a href="#">Web</a></span>
           </div>
         </article>
       </div>
+      <%end%>
     </div>
   </div>
 </div>

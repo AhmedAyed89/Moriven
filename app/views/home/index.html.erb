@@ -121,59 +121,21 @@
 
       <div id="galleryContainer" class="clearfix withSpaces col-3">
 
-
+        <%@portfolios.each do |p|%>
         <div class="galleryItem">
-
           <article class="portfolio-item">
             <div class="portfolio-thumbnail">
-              <a href="04-project-page.html"><img draggable="false" src="assets/images/demo-content/02-home-portfolio-02.jpg" alt="" title=""></a>
+              <a href="04-project-page.html"><%=image_tag 'demo-content/02-home-portfolio-01.jpg',draggable:'false'%></a>
               <a href="assets/images/demo-content/02-home-portfolio-02.jpg" data-type="image" title="Image Title Goes Here" class="magnificpopup overlay-img"><span class="overlay-ico"><i class="pe-7s-search"></i></span></a>
             </div>
-            <h4 class="entry-title"><a href="04-project-page.html">Project name goes here</a></h4>
+            <h4 class="entry-title"><a href="04-project-page.html"><%=p.title%></a></h4>
             <div class="entry-meta">
               <span class="cat-links"><a href="04-project-page.html">Identity</a>, <a href="#">Web</a></span>
             </div>
-
           </article>
-
         </div>
-
-
-        <div class="galleryItem">
-
-          <article class="portfolio-item">
-            <div class="portfolio-thumbnail">
-              <a href="04-project-page.html"><img draggable="false" src="assets/images/demo-content/02-home-portfolio-01.jpg" alt="" title=""></a>
-              <a href="assets/images/demo-content/02-home-portfolio-01.jpg" data-type="image" title="Image Title Goes Here" class="magnificpopup overlay-img"><span class="overlay-ico"><i class="pe-7s-search"></i></span></a>
-            </div>
-            <h4 class="entry-title"><a href="04-project-page.html">Project name goes here</a></h4>
-            <div class="entry-meta">
-              <span class="cat-links"><a href="04-project-page.html">Identity</a>, <a href="#">Web</a></span>
-            </div>
-
-          </article>
-
-        </div>
-
-
-        <div class="galleryItem">
-          <article class="portfolio-item">
-
-            <div class="portfolio-thumbnail">
-              <a href="04-project-page.html"><img draggable="false" src="assets/images/demo-content/02-home-portfolio-07.jpg" alt="" title=""></a>
-              <a href="assets/images/demo-content/02-home-portfolio-07.jpg" data-type="image" title="Image Title Goes Here" class="magnificpopup overlay-img"><span class="overlay-ico"><i class="pe-7s-search"></i></span></a>
-            </div>
-            <h4 class="entry-title"><a href="04-project-page.html">Project name goes here</a></h4>
-            <div class="entry-meta">
-              <span class="cat-links"><a href="04-project-page.html">Identity</a>, <a href="#">Web</a></span>
-            </div>
-
-          </article>
-
-        </div>
-
+        <%end%>
       </div>
-
     </div>
   </div>
   <!-- / section -->
@@ -184,8 +146,6 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-4 animated" data-fx="fadeInLeft">
-
-
           <div class="iconBox-center horizontal media">
             <a class="pull-left icon-thumbnail" href="#" ><i class="pe-7s-map-marker"></i></a>
             <div class="media-body">
@@ -258,9 +218,7 @@
   <%= render 'teams/team'%>
   <!--  section BLOG -->
   <div id="s_01" class="content-area">
-
     <div class="container">
-
       <div class="row section-header">
         <div class="col-sm-12 col-md-9 table-cell">
           <h2> Our Blog</h2>
@@ -271,6 +229,7 @@
         </div>
       </div>
       <div id="blog-list" class="clearfix withMasonry isotope">
+        <%@articles.each do |article|%>
         <article class="blog-item item-smaller isotope-item">
           <div class="blog-thumbnail">
             <a href="06-post.html">
@@ -280,40 +239,12 @@
           </div>
 
           <div class="innerMargin">
-            <h4 class="entry-title"><a href="06-post.html">This is a standard post format with preview picture</a></h4>
-            <p>Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse onsectetur adipisicing elit, sed do eiusmod tempor...
-            </p>
+            <h4 class="entry-title"><a href="06-post.html"><%=article.title%></a></h4>
+            <p><%=article.description%></p>
             <a class="btn readMore btn-sm btn-border" href="06-post.html">Continue reading</a>
           </div>
         </article>
-        <article class="blog-item item-smaller isotope-item">
-          <div class="blog-thumbnail">
-            <a href="06-post.html">
-              <%= image_tag 'demo-content/02-home-blog-02.jpg'%>
-            </a>
-            <a href="06-post.html" class="overlay-img"><span class="overlay-ico"><i class="pe-7s-search"></i></span></a>
-          </div>
-          <div class="innerMargin">
-            <h4 class="entry-title"><a href="06-post.html">This is a standard post format with preview picture</a></h4>
-            <p>Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse onsectetur adipisicing elit, sed do eiusmod tempor...
-            </p>
-            <a class="btn readMore btn-sm btn-border" href="06-post.html">Continue reading</a>
-          </div>
-        </article>
-        <article class="blog-item item-smaller isotope-item">
-          <div class="blog-thumbnail">
-            <a href="06-post.html">
-              <%= image_tag 'demo-content/02-home-blog-03.jpg'%>
-            </a>
-            <a href="06-post.html" class="overlay-img"><span class="overlay-ico"><i class="pe-7s-search"></i></span></a>
-          </div>
-          <div class="innerMargin">
-            <h4 class="entry-title"><a href="06-post.html">This is a standard post format with preview picture</a></h4>
-            <p>Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse onsectetur adipisicing elit, sed do eiusmod tempor...
-            </p>
-            <a class="btn readMore btn-sm btn-border" href="06-post.html">Continue reading</a>
-          </div>
-        </article>
+        <%end%>
       </div>
 
     </div>

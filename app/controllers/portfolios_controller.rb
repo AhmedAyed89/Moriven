@@ -6,7 +6,7 @@ class PortfoliosController < ApplicationController
   end
 
   def show
-
+    @portfolios = Portfolio.limit(3)
   end
 
   def new
